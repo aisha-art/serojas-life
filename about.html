@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Seroja's Life</title>
+    <style>
+
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(circle closest-side, #c95f5f 10%, transparent 10%),
+                      radial-gradient(circle closest-side, #f8e1e7 10%, transparent 10%);
+    background-size: 50px 50px, 100px 100px;
+    background-position: 0 0, 25px 25px; 
+    color: #333;
+}
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #c95f5f;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #fce4ec;
+        }
+
+        .introduction {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(255, 255, 255, 0.8);
+            margin-top: 70px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .introduction h1 {
+            font-size: 36px;
+            color: #c95f5f;
+            margin-bottom: 20px;
+        }
+
+        .introduction p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .popup-section {
+            display: none;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 80%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid #c95f5f;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        input[type="radio"]:checked + .popup-section {
+            display: block;
+        }
+
+        .button {
+            display: block;
+            background-color: #c95f5f;
+            color: white;
+            padding: 15px;
+            margin: 10px auto;
+            border-radius: 5px;
+            font-size: 18px;
+            width: 200px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .button:hover {
+            background-color: #e57373;
+            transform: translateY(-5px);
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .image-gallery img {
+            width: 150px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .social-media-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-media-icons img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s;
+        }
+
+        .social-media-icons img:hover {
+            transform: scale(1.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #c95f5f;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 12px;
+            box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="homepage.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About Me</a>
+    </div>
+
+    <div class="introduction">
+        <h1>Welcome to Seroja's Life</h1>
+        <p>Hi, I’m Seroja! Passionate about baking, exploring new hobbies, and sharing my experiences with the world.</p>
+    </div>
+
+    <div class="container">
+
+        <label for="hobbies" class="button">Hobbies</label>
+        <input type="radio" name="info" id="hobbies">
+        <div class="popup-section">
+            <h2>Hobbies</h2>
+            <p>I love baking! It’s my favorite way to relax and express creativity.</p>
+            <div class="image-gallery">
+                <img src="apicbaking1.jpg" alt="Baking 1">
+                <img src="apicbaking2.jpg" alt="Baking 2">
+            </div>
+        </div>
+
+        <label for="experiences" class="button">Experiences</label>
+        <input type="radio" name="info" id="experiences">
+        <div class="popup-section">
+            <h2>Experiences</h2>
+            <p>Through my industrial training, I gained valuable skills in file management and teamwork.</p>
+            <div class="image-gallery">
+                <img src="apicexperience1.jpg" alt="Experience 1">
+                <img src="apicexperience2.jpg" alt="Experience 2">
+            </div>
+        </div>
+
+        <label for="interests" class="button">Interests</label>
+        <input type="radio" name="info" id="interests">
+        <div class="popup-section">
+            <h2>Interests</h2>
+            <p>I’m passionate about exploring recipes, thrifting, and learning languages.</p>
+            <div class="image-gallery">
+                <img src="apicinterest1.jpg" alt="Interest 1">
+                <img src="apicinterest2.jpg" alt="Interest 2">
+            </div>
+        </div>
+
+        <label for="timeline" class="button">Timeline of My Journey</label>
+        <input type="radio" name="info" id="timeline">
+        <div class="popup-section">
+            <h2>Timeline of My Journey</h2>
+            <p>Here are some significant milestones in my life:</p>
+            <ul>
+                <li>🎓 Graduated from Secondary School - 2021</li>
+                <li>🎂 Started Baking Hobby - 2021</li>
+                <li>💼 Completed Industrial Training at UKM - 2024</li>
+                <li>📚 Started Learning New Languages - 2024</li>
+            </ul>
+        </div>
+
+        <label for="social" class="button">Social Media</label>
+        <input type="radio" name="info" id="social">
+        <div class="popup-section">
+            <h2>Connect with Me</h2>
+            <div class="social-media-icons">
+                <a href="https://instagram.com/aesgweentea" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                </a>
+                <a href="https://tiktok.com/@aesgreentea00" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/TikTok_icon-black.svg" alt="TikTok">
+                </a>
+                <a href="https://open.spotify.com/user/qrr2ax7oatmb2cyiasm8nffic" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify">
+                </a>
+                <a href="https://twitter.com/aesgreentea" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Twitter_Logo_as_of_2021.svg" alt="Twitter">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Seroja's Life. All rights reserved.</p>
+    </footer>
+</body>
+</html>

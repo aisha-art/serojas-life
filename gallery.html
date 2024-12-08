@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Seroja's Life</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: radial-gradient(circle closest-side, #c95f5f 10%, transparent 10%),
+                              radial-gradient(circle closest-side, #f8e1e7 10%, transparent 10%);
+            background-size: 50px 50px, 100px 100px;
+            background-position: 0 0, 25px 25px; 
+            color: #333;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #c95f5f;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .gallery-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+            padding: 20px;
+        }
+        .gallery-button {
+            background-color: #c95f5f;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            margin: 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .info-section {
+            display: none;
+            padding: 20px;
+            margin-top: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 800px;
+            margin: auto;
+        }
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .photo-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #c95f5f;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 12px;
+            box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+        <a href="homepage.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About Me</a>
+    </div>
+
+    <div class="gallery-buttons">
+        <button class="gallery-button" onclick="toggleInfo('kindergarten')">Kindergarten</button>
+        <button class="gallery-button" onclick="toggleInfo('elementary')">Elementary School</button>
+        <button class="gallery-button" onclick="toggleInfo('secondary')">Secondary School</button>
+        <button class="gallery-button" onclick="toggleInfo('uni')">Uni Life</button>
+    </div>
+
+    <div id="kindergarten" class="info-section">
+        <h2>Pasti Al-Faizin</h2>
+        <p>Here are some of the memories from my Kindergarten days:</p>
+        <div class="photo-grid">
+            <img src="gkindergarten-photo1.jpg" alt="Kindergarten Photo 1">
+            <img src="gkindergarten-photo2.jpg" alt="Kindergarten Photo 2">
+            <img src="gkindergarten-photo3.jpg" alt="Kindergarten Photo 3">
+            <img src="gkindergarten-photo4.jpg" alt="Kindergarten Photo 4">
+        </div>
+    </div>
+
+    <div id="elementary" class="info-section">
+        <h2>SRAI Bandar Baru Bangi</h2>
+        <p>Here are some of the memories from my Elementary School years:</p>
+        <div class="photo-grid">
+            <img src="gelementary-photo1.jpg" alt="Elementary Photo 1">
+            <img src="gelementary-photo2.jpg" alt="Elementary Photo 2">
+            <img src="gelementary-photo3.jpg" alt="Elementary Photo 3">
+            <img src="gelementary-photo4.jpg" alt="Elementary Photo 4">
+        </div>
+    </div>
+
+    <div id="secondary" class="info-section">
+        <h2>SAM Sungai Merab Luar</h2>
+        <p>Here are some of the memories from my Secondary School years:</p>
+        <div class="photo-grid">
+            <img src="gsecondary-photo1.jpg" alt="Secondary Photo 1">
+            <img src="gsecondary-photo2.jpg" alt="Secondary Photo 2">
+            <img src="gsecondary-photo3.jpg" alt="Secondary Photo 3">
+            <img src="gsecondary-photo4.jpg" alt="Secondary Photo 4">
+        </div>
+    </div>
+
+    <div id="uni" class="info-section">
+        <h2>UiTM Kampus Rembau - Diploma in Information Management</h2>
+        <p>Here are some pictures from my University life:</p>
+        <div class="photo-grid">
+            <img src="guni-photo1.jpg" alt="Uni Life 1">
+            <img src="guni-photo2.jpg" alt="Uni Life 2">
+            <img src="guni-photo3.jpg" alt="Uni Life 3">
+            <img src="guni-photo4.jpg" alt="Uni Life 4">
+            <img src="guni-photo5.jpg" alt="Uni Life 5">
+            <img src="guni-photo6.jpg" alt="Uni Life 6">
+            <img src="guni-photo7.jpg" alt="Uni Life 7">
+            <img src="guni-photo8.jpg" alt="Uni Life 8">
+            <img src="guni-photo9.jpg" alt="Uni Life 9">
+            <img src="guni-photo10.jpg" alt="Uni Life 10">
+            <img src="guni-photo11.jpg" alt="Uni Life 11">
+            <img src="guni-photo12.jpg" alt="Uni Life 12">
+            <img src="guni-photo13.jpg" alt="Uni Life 13">
+            <img src="guni-photo14.jpg" alt="Uni Life 14">
+            <img src="guni-photo15.jpg" alt="Uni Life 15">
+            <img src="guni-photo16.jpg" alt="Uni Life 16">
+            <img src="guni-photo17.jpg" alt="Uni Life 17">
+            <img src="guni-photo18.jpg" alt="Uni Life 18">
+            <img src="guni-photo19.jpg" alt="Uni Life 19">
+            <img src="guni-photo20.jpg" alt="Uni Life 20">
+        </div>
+        <p>Watch this video about my University life memories:</p>
+        <video controls>
+            <source src="guni-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script>
+        function toggleInfo(section) {
+            const allSections = document.querySelectorAll('.info-section');
+            allSections.forEach(function(info) {
+                info.style.display = 'none';
+            });
+            document.getElementById(section).style.display = 'block';
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Seroja's Life. All rights reserved.</p>
+    </footer>
+</body>
+</html>

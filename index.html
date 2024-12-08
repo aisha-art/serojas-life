@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Seroja's Life</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f8e1e7, #f3d0dc); 
+            background-image: radial-gradient(circle closest-side, #c95f5f 10%, transparent 10%), 
+                              radial-gradient(circle closest-side, #f8e1e7 10%, transparent 10%);
+            background-size: 50px 50px, 100px 100px; 
+            background-position: 0 0, 25px 25px;
+            overflow: hidden;
+        }
+        .decorative-circle {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: rgba(255, 192, 203, 0.3); 
+            top: 10%;
+            left: 10%;
+            z-index: 0;
+            filter: blur(30px); 
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #c95f5f;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            z-index: 1; 
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            z-index: 1;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #c95f5f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        button:hover {
+            background-color: #eb7fa3;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #c95f5f;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+            box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
+        }   
+    </style>
+</head>
+<body>
+    <div class="decorative-circle"></div> 
+    <img src="indexpic.jpg" alt="Picture of Seroja">
+    <h1>WELCOME TO SEROJA'S LIFE</h1>
+    <button onclick="window.location.href='homepage.html'">Let's Get Started</button>
+    <footer>
+        <p>&copy; 2024 Seroja's Life. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
